@@ -12,9 +12,9 @@ class Inicio : AppCompatActivity() {
         setContentView(R.layout.activity_inicio)
 
         btnJugar.setOnClickListener{
-            val jugar = Intent(this, Jugar::class.java)
+            val tema = Intent(this, Tema::class.java)
 
-            startActivity(jugar)
+            startActivity(tema)
         }
 
         btnRespuestas.setOnClickListener{
