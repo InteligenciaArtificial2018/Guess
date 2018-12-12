@@ -60,16 +60,16 @@
                 app:srcCompat="@mipmap/loki" />
 
             <EditText
-                android:id="@+id/editText3"
+                android:id="@+id/respuestaPersonajes"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
                 android:hint="@string/ingrese_su_respuesta"
-                android:inputType="textPersonName" />
+                android:inputType="none" />
 
             <Button
-                android:id="@+id/btnConfirmar"
+                android:id="@+id/btnConfirmarPersonajes"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

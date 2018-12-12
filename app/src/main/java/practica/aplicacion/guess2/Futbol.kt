@@ -6,7 +6,8 @@ import kotlinx.android.synthetic.main.activity_futbol.*
 import java.util.*
 
 class Futbol : AppCompatActivity() {
-
+// Validacion de los nombres de correctos de cada una de las imagenes los cuales seran comparados
+// con las respuestas almacenadas en la base de datos//
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_futbol)
