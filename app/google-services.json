@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1024844334461",
+    "firebase_url": "https://guess-alberto-pacheco.firebaseio.com",
+    "project_id": "guess-alberto-pacheco",
+    "storage_bucket": "guess-alberto-pacheco.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1024844334461:android:7c3c8e4b49cd2cf4",
+        "android_client_info": {
+          "package_name": "practica.aplicacion.guess2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1024844334461-lct2chj7ot71d04vei1ha6la7amj2v7r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "practica.aplicacion.guess2",
+            "certificate_hash": "1b43fda212353150e815c88923b679108412ede6"
+          }
+        },
+        {
+          "client_id": "1024844334461-197i04lf1fp72d3o6r5jlr33gbav9l7s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTmpWIvJEDMHhoyfpVhUV6cuKQmEAfK_Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1024844334461-197i04lf1fp72d3o6r5jlr33gbav9l7s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

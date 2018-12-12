@@ -6,6 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".Lugares">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ScrollView>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -56,7 +62,7 @@
             app:srcCompat="@mipmap/grecia" />
 
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/etLugares"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -65,7 +71,7 @@
             android:inputType="textPersonName" />
 
         <Button
-            android:id="@+id/btnConfirmar"
+            android:id="@+id/btnConfirmarLugares"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
