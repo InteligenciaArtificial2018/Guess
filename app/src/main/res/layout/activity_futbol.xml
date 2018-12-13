@@ -62,7 +62,7 @@
             app:srcCompat="@mipmap/falcao" />
 
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/respuestaFutbol"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -71,7 +71,7 @@
             android:inputType="textPersonName" />
 
         <Button
-            android:id="@+id/btnConfirmar"
+            android:id="@+id/btnConfirmarFutbol"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"

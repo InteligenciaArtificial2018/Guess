@@ -2,7 +2,9 @@ package practica.aplicacion.guess2
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.text.InputType
 import android.widget.Button
+import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_futbol.*
@@ -17,34 +19,38 @@ class Personajes : AppCompatActivity() {
         val random = Random()
         var numeroGenerado = random.nextInt(22)
 
-        establecerImagen(0)
-        confirmacion(0)
+        establecerImagen(numeroGenerado)
+        confirmacion(numeroGenerado)
+
+
     }
 
 
-    val imagenes = arrayOf("aquaman", "arrow", "batman", "capitanamerica", "chapulincolorado", "daredevil", "elacertijo", "elguason", "elzorro", "flash", "gatubela", "hellboy", "hulk", "ironman", "loki", "mujermaravilla", "panteranegra", "robin", "spiderman", "tarzan", "thor", "tortugasninja", "wolverine")
-    val respuestas = arrayOf("aquaman ")
+    val imagenes = arrayOf("aquaman", "arrow", "batman", "capitan america", "chapulin colorado", "daredevil", "el acertijo", "el guason", "el zorro", "flash", "gatubela", "hellboy", "hulk", "ironman", "loki", "mujer maravilla", "pantera negra", "robin", "spiderman", "tarzan", "thor", "tortugas ninja", "wolverine")
+
 
     fun establecerImagen( numero:Int){
         var img = getResources().getIdentifier(imagenes[numero], "mipmap", getPackageName())
         imagenPersonajes.setImageResource(img)
     }
+
+
     fun confirmacion(numero: Int)
     {
 
         val boton = findViewById<Button>(R.id.btnConfirmarPersonajes)
-        val texto = findViewById<TextView>(R.id.respuestaPersonajes)
-        val respuesta = texto.text
-
+        val texto = findViewById<EditText>(R.id.respuestaPersonajes)
         boton.setOnClickListener(){
-            if (respuesta == respuestas[numero])
+            val respuesta = texto.text.toString()
+            if (respuesta == imagenes[numero])
             {
                 Toast.makeText(this, "Respuesta correcta", Toast.LENGTH_LONG).show()
             }
             else
             {
-                Toast.makeText(this, respuesta, Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Respuesta incorrecta", Toast.LENGTH_LONG).show()
             }
-        }
-    }
+//            Toast.makeText(this, imagenes[2], Toast.LENGTH_LONG).show()
+      }
+   }
 }
