@@ -11,9 +11,9 @@
     <string name="todo2">TODO</string>
     <string name="todo3">TODO</string>
     <string name="todo4">TODO</string>
-    <string name="vidas_3">Vidas: 3</string>
-    <string name="_0">0</string>
-    <string name="puntaje_0">Puntaje: 0</string>
+    <string name="vidas"></string>
+    <string name="_0"></string>
+    <string name="puntaje_0"></string>
     <string name="ingrese_su_respuesta">Ingrese su respuesta</string>
     <string name="confirmar">CONFIRMAR</string>
     <string name="jugar">JUGAR</string>

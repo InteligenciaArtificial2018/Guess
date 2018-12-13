@@ -13,18 +13,24 @@ import kotlinx.android.synthetic.main.activity_personajes.*
 import java.util.*
 
 class Lugares : AppCompatActivity() {
-
+    /**
+     *
+     *
+     */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_lugares)
         val random = Random()
-        var numeroGenerado = random.nextInt(22)
+        var numeroGenerado = random.nextInt(13)
 
         establecerImagen(numeroGenerado)
         confirmacion(numeroGenerado)
 
     }
 
+    /**
+     * Arreglo en el cual se encuentran las respuestas correctas a ingresar
+     */
     val imagenes = arrayOf("china", "egipto", "grecia", "japon", "londres", "machupichu", "niagara", "nuevayork", "paris", "roma", "stonehenge", "sidney", "venecia", "saopaulo")
 
     fun establecerImagen(numero: Int) {
@@ -32,7 +38,9 @@ class Lugares : AppCompatActivity() {
         imagenLugares.setImageResource(img)
     }
 
-
+    /**
+     * funcion que evalua y desplega los mensajes de confirmacion.
+     */
     fun confirmacion(numero: Int)
     {
 
