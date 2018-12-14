@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@mipmap/logoazul"
     tools:context=".Personajes">
 
     <ScrollView
@@ -27,6 +28,7 @@
                     android:layout_weight="1"
                     android:text="@string/vidas"
                     android:textAlignment="textStart"
+                    android:textColor="@color/color2"
                     android:textSize="24sp"
                     android:textStyle="bold" />
 
@@ -37,6 +39,7 @@
                     android:layout_weight="1"
                     android:text="@string/_0"
                     android:textAlignment="center"
+                    android:textColor="@color/color2"
                     android:textSize="24sp"
                     android:textStyle="bold" />
 
@@ -47,6 +50,7 @@
                     android:layout_weight="1"
                     android:text="@string/puntaje_0"
                     android:textAlignment="textEnd"
+                    android:textColor="@color/color2"
                     android:textSize="24sp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -66,14 +70,16 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:hint="@string/ingrese_su_respuesta"
-                android:inputType="textNoSuggestions" />
+                android:inputType="textNoSuggestions"
+                android:textColor="@android:color/white" />
 
             <Button
                 android:id="@+id/btnConfirmarPersonajes"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/confirmar" />
+                android:text="@string/confirmar"
+                android:textColor="@color/color2" />
         </LinearLayout>
     </ScrollView>
 

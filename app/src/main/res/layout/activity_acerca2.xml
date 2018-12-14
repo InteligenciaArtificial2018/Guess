@@ -4,15 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@mipmap/logoazul"
     tools:context=".Acerca">
 
     //En esta parte solo se desplega informacion relacionada con el desarrollador y politica de la
     empresa//
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Copyright Guess 2018"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="341dp"
-        android:layout_height="92dp"
-        android:text="Guess es un juego entretenido pensado para que el usuario aproveche sus ratos de ocio y a la misma vez ponga en practica su conocimiento."
+        android:layout_height="153dp"
+        android:text="Guess es un juego entretenido pensado para que el usuario aproveche sus ratos de ocio y a la misma vez ponga en practica su conocimiento. En esta su primera version promete poner a prueba su conocimiento sobre diferentes temas de interes en la actualidad."
+        android:textColor="@color/color2"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -33,4 +49,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@mipmap/logo" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Desarrollado por: Alberto Pacheco"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent" />
 </android.support.constraint.ConstraintLayout>

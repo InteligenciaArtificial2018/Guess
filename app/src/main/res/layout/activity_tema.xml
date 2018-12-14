@@ -1,11 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@mipmap/logoazul"
     tools:context=".Tema">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Copyright Guess 2018"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -37,6 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="28dp"
         android:text="futbol"
+        android:textColor="@color/color2"
         app:layout_constraintBottom_toTopOf="@+id/btnLugares"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -48,6 +62,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="lugares"
+        android:textColor="@color/color2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -61,6 +76,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:text="marcas"
+        android:textColor="@color/color2"
         app:layout_constraintBottom_toTopOf="@+id/btnPersonajes"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -73,6 +89,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="12dp"
         android:text="personajes"
+        android:textColor="@color/color2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

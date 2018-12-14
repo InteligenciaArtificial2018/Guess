@@ -6,7 +6,7 @@
     <string name="river_plate">River Plate</string>
     <string name="salah">SALAH</string>
     <string name="real_madrid">REAL MADRID</string>
-    <string name="todo">TODO</string>
+    <string name="todo5">TODO</string>
     <string name="todo1">TODO</string>
     <string name="todo2">TODO</string>
     <string name="todo3">TODO</string>
@@ -20,4 +20,7 @@
     <string name="respuestas">RESPUESTAS</string>
     <string name="guess">GUESS</string>
     <string name="acerca_de1">ACERCA DE</string>
+    <string name="copyright_guess_2018">Copyright Guess 2018</string>
+    <string name="vuelve_a_intentarlo">VUELVE A INTENTARLO</string>
+    <string name="todo">TODO</string>
 </resources>

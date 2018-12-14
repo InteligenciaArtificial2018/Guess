@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@mipmap/logoazul">
 
     <ImageView
         android:id="@+id/imageView5"
@@ -15,14 +15,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.497"
-        app:srcCompat="@mipmap/gameover1" />
+        app:srcCompat="@mipmap/gameover1"
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:text="Copyright Guess 2018"
+        android:text="@string/copyright_guess_2018"
+        android:textColor="@android:color/white"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -35,7 +37,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
-        android:text="VUELVE A INTENTARLO"
+        android:text="@string/vuelve_a_intentarlo"
+        android:textColor="@color/color2"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/imageView5"
