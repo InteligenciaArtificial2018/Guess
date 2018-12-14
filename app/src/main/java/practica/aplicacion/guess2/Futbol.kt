@@ -10,14 +10,21 @@ import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_futbol.*
 import java.util.*
 
+/**
+ * Clase de futbol
+ */
 class Futbol : AppCompatActivity() {
     // Validacion de los nombres de correctos de cada una de las imagenes los cuales seran comparados
 // con las respuestas almacenadas en la base de datos//
-
+    /**
+     * creacion de las variables que conteo en la parte superior del layout
+     */
     var puntaje: Int = 0
     var vida: Int = 3
     var conteo: Int = 0
-
+    /**
+     * funcion donde se valida el rango de las imagenes en el arreglo
+     */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_futbol)
@@ -38,7 +45,9 @@ class Futbol : AppCompatActivity() {
         return true
     }
 
-
+    /**
+     * arreglo donde se encuentran las respuestas correctas de la clase futbol
+     */
     val imagenes = arrayOf("baca", "bale", "bocajunior", "dembele", "dybala", "elis", "falcao", "gabrieljesus", "gago", "griezman", "ibrahimovic", "icardi", "james", "kaka", "kroos", "mata", "mbappe", "modric", "neymar", "pirlo", "ramos", "realmadrid", "river", "robben", "ronaldinho", "salah", "suarez", "tevez")
 
     fun establecerImagen(numero: Int) {
@@ -48,6 +57,11 @@ class Futbol : AppCompatActivity() {
 
     }
 
+    /**
+     * Funcion donde se captura la respuestas del usuario y se valida si la respuesta es correcta o
+     * incorrecta, Tambien es donde se verifica si la respuesta es correcta y suma en los conteos o
+     * en el caso de fallar 3 veces "game over"
+     */
     fun confirmacion(numero: Int)
     {
         val boton = findViewById<Button>(R.id.btnConfirmarFutbol)
@@ -71,7 +85,7 @@ class Futbol : AppCompatActivity() {
                 var numeroGenerar = otroRandom.nextInt(27)
 
                 establecerImagen(numeroGenerar)
-
+// validacion de la suma de conteo de 1 en 1 y del puntaje de 5 en 5
                 conteo = conteo + 1
                 puntaje = puntaje + 5
 

@@ -5,6 +5,10 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_inicio.*
 
+/**
+ * clase de inicio: esta es la primera pantalla del juego y en la cual se hace el respectivo llamado
+ * de los layout respectivos.
+ */
 class Inicio : AppCompatActivity() {
 //Funciones con las cuales se manda a llamar cada respectivo layout//
     override fun onCreate(savedInstanceState: Bundle?) {

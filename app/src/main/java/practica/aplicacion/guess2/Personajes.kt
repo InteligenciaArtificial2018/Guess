@@ -12,12 +12,17 @@ import kotlinx.android.synthetic.main.activity_futbol.*
 import kotlinx.android.synthetic.main.activity_personajes.*
 import java.util.*
 
+/**
+ * Clase correspondiente al tema relacionado con la opcion personajes.
+ */
 class Personajes : AppCompatActivity() {
 
     var puntaje: Int = 0
     var vida: Int = 3
     var conteo: Int = 0
-
+    /**
+     * Funcion donde se encuentra el rango que se debe recorrer en el arreglo.
+     */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_personajes)
@@ -37,7 +42,10 @@ class Personajes : AppCompatActivity() {
         return true
     }
 
-
+    /**
+     * Arreglo donde se encuentran las respuestas correctas de cada una de las imagenes correspondientes
+     * a la opcion de personajes
+     */
     val imagenes = arrayOf("aquaman", "arrow", "batman", "capitanamerica", "chapulincolorado", "daredevil", "elacertijo", "elguason", "elzorro", "flash", "gatubela", "hellboy", "hulk", "ironman", "loki", "mujermaravilla", "panteranegra", "robin", "spiderman", "tarzan", "thor", "tortugasninja", "wolverine")
 
 

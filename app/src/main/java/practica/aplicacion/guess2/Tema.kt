@@ -3,13 +3,22 @@ package practica.aplicacion.guess2
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.ActionBar
 import kotlinx.android.synthetic.main.activity_tema.*
 
+/**
+ * Clase en la cual se manda a llamar el layout correspondiente de acuerdo a la opcion elegida
+ * por el usuario.
+ */
 class Tema : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tema)
+
+        // Flecha atras
+        val actionbar: ActionBar? = supportActionBar
+        actionbar!!.setDisplayHomeAsUpEnabled(true)
 
         btnFutbol.setOnClickListener{
             val futbol = Intent(this, Futbol::class.java)
@@ -34,5 +43,9 @@ class Tema : AppCompatActivity() {
 
             startActivity(marcas)
         }
+    }
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 }

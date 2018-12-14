@@ -16,8 +16,7 @@ import java.util.*
 
 class Lugares : AppCompatActivity() {
     /**
-     *
-     *
+     *Creacion de los textview correspondientes a los puntajes y vidas.
      */
     var puntaje: Int = 0
     var vida: Int = 3
@@ -55,7 +54,7 @@ class Lugares : AppCompatActivity() {
     }
 
     /**
-     * funcion que evalua y desplega los mensajes de confirmacion.
+     * funcion eque confirma la informacion ingresada y valida si la respuesta es correcta o no.
      */
     fun confirmacion(numero: Int)
     {

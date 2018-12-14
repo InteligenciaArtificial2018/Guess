@@ -9,8 +9,13 @@ import kotlinx.android.synthetic.main.activity_marcas.*
 import practica.aplicacion.guess2.R.id.imagenMarcas
 import java.util.*
 
+/**
+ * clase correspondiente a la opcion de marcas.
+ */
 class Marcas : AppCompatActivity() {
-
+    /**
+     * creacion de las variables de puntaje
+     */
     var puntaje: Int = 0
     var vida: Int = 3
     var conteo: Int = 0
@@ -35,8 +40,15 @@ class Marcas : AppCompatActivity() {
         return true
     }
 
+    /**
+     * Arreglo en la cual se encuentran la lista de las respuestas correctas.
+     */
     val imagenes = arrayOf("android", "apple", "facebook", "ferrari", "gmail", "honda", "lacoste", "mcdonald", "mercedes", "messenger", "nike", "pepsi", "playstation", "skype", "starbucks", "twitter", "windows", "warner", "xbox")
 
+    /**
+     * funciones en la que se compara si la respuesta en el arreglo y la ingresada por el usuario
+     * es correcta.
+     */
     fun establecerImagen(numero: Int) {
         var img = getResources().getIdentifier(imagenes[numero], "mipmap", getPackageName())
         imagenMarcas.setImageResource(img)
@@ -73,7 +85,9 @@ class Marcas : AppCompatActivity() {
                 receptorConteo.setText("" + conteo)
                 receptorPuntaje.setText("Puntaje: " + puntaje)
                 texto.setText("")
-
+                /**
+                 * Mensajes de confirmacion de las respuestas ingresadas por el usuario.
+                 */
                 Toast.makeText(this, "Respuesta correcta", Toast.LENGTH_LONG).show()
 
             }
