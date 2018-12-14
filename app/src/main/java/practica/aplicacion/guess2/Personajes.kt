@@ -38,7 +38,7 @@ class Personajes : AppCompatActivity() {
     }
 
 
-    val imagenes = arrayOf("aquaman", "arrow", "batman", "capitan america", "chapulin colorado", "daredevil", "el acertijo", "el guason", "el zorro", "flash", "gatubela", "hellboy", "hulk", "ironman", "loki", "mujer maravilla", "pantera negra", "robin", "spiderman", "tarzan", "thor", "tortugas ninja", "wolverine")
+    val imagenes = arrayOf("aquaman", "arrow", "batman", "capitanamerica", "chapulincolorado", "daredevil", "elacertijo", "elguason", "elzorro", "flash", "gatubela", "hellboy", "hulk", "ironman", "loki", "mujermaravilla", "panteranegra", "robin", "spiderman", "tarzan", "thor", "tortugasninja", "wolverine")
 
 
     fun establecerImagen( numero:Int){
@@ -78,9 +78,9 @@ class Personajes : AppCompatActivity() {
 
                 receptorConteo.setText("" + conteo)
                 receptorPuntaje.setText("Puntaje: " + puntaje)
+                texto.setText("")
 
                 Toast.makeText(this, "Respuesta correcta", Toast.LENGTH_LONG).show()
-
 
             }
             else

@@ -23,7 +23,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/txtVidas"
+                android:id="@+id/txtVidasFutbol"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -33,7 +33,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/txtConteo"
+                android:id="@+id/txtConteoFutbol"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -43,7 +43,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/txtPuntaje"
+                android:id="@+id/txtPuntajeFutbol"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -68,7 +68,7 @@
             android:layout_weight="1"
             android:ems="10"
             android:hint="@string/ingrese_su_respuesta"
-            android:inputType="textPersonName" />
+            android:inputType="textNoSuggestions" />
 
         <Button
             android:id="@+id/btnConfirmarFutbol"
